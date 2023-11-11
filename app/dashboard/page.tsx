@@ -275,6 +275,7 @@ export default function Dashboard() {
                     </div>
                   }
                   onPageChange={(page) => handleClickPage(page.selected)}
+                  forcePage={page}
                   renderOnZeroPageCount={() => null}
                   containerClassName="paginate-container"
                   previousLinkClassName="paginate-prev"
