@@ -259,8 +259,8 @@ export default function Dashboard() {
                 </ul>
                 <ReactPaginate
                   breakLabel="..."
-                  pageRangeDisplayed={1}
-                  marginPagesDisplayed={2}
+                  pageRangeDisplayed={2}
+                  marginPagesDisplayed={3}
                   pageCount={totalPage}
                   previousLabel={
                     <div className="flex items-center gap-2 mr-4">

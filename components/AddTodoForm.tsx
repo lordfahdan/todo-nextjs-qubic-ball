@@ -22,8 +22,9 @@ function SubmitButton() {
   return (
     <button
       type="submit"
-      aria-disabled={pending}
       className="uppercase block w-full p-2 text-lg rounded bg-indigo-500 hover:bg-indigo-600 focus:outline-none text-white"
+      aria-disabled={pending}
+      disabled={pending}
     >
       Submit
     </button>

@@ -23,8 +23,9 @@ function SubmitButton() {
   return (
     <button
       type="submit"
-      aria-disabled={pending}
       className="py-2 px-4 text-base font-bold rounded bg-indigo-500 hover:bg-indigo-600 focus:outline-none text-white"
+      aria-disabled={pending}
+      disabled={pending}
     >
       Submit
     </button>
@@ -32,8 +33,6 @@ function SubmitButton() {
 }
 
 export default function ProfileForm({user}: {user: UserType | undefined}) {
-  const router = useRouter()
-  const formRef = useRef<HTMLFormElement>(null);
   const [state, formAction] = useFormState(updateProfile, initialState);
   const [form, setForm] = useState<UpdateProfileFormType>({
     name: '',
