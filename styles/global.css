@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+* {
+  color-scheme: dark;
+  @apply text-gray-400
+}
+body {
+  @apply bg-slate-800
+}
+
+h1,h2,h3,h4,h5,h6 {
+  @apply text-white
+}
+
+
+.paginate-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 32px 0 10px;
+}
+
+.paginate-item {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #3b82f6;
+  background: #ffffff;
+}
+
+.paginate-item:hover {
+  color: #ffffff;
+  background: #3b82f6;
+  transition: all ease-in-out 150ms;
+}
+
+.paginate-item:active {
+  color: #ffffff;
+  background: #2563eb;
+  transition: all ease-in-out 150ms;
+}
+
+.paginate-item-active {
+  background: #2563eb;
+  color: #ffffff;
+}
